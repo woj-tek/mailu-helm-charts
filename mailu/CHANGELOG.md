@@ -1,5 +1,40 @@
 # Changelog
 
+## [1.6.0](https://github.com/woj-tek/mailu-helm-charts/compare/mailu-v1.5.0...mailu-1.6.0) (2024-06-17)
+
+
+### Features
+
+* add MAILU_HELM_CHART environment variable ([#312](https://github.com/woj-tek/mailu-helm-charts/issues/312)) ([e26ffd7](https://github.com/woj-tek/mailu-helm-charts/commit/e26ffd7c70a8788db93cb48cbf48d51a33a8eb8a))
+* Add proxyAuth section to values to configure PROXY_AUTH_* env vars ([04825ef](https://github.com/woj-tek/mailu-helm-charts/commit/04825ef1457ae34e2b0471fefd04397df4ba4a01))
+* add securityContext and podSecurityContext options ([#263](https://github.com/woj-tek/mailu-helm-charts/issues/263)) ([6f9e25b](https://github.com/woj-tek/mailu-helm-charts/commit/6f9e25bba7c7f69e84af6f6cd13fb7648bb5fe0c))
+* Add support for TLS settings ([07fad3a](https://github.com/woj-tek/mailu-helm-charts/commit/07fad3a81bb823ca979afdc1dca0d4944d4e7775))
+* Added support for WILDCARD_SENDERS ([f72db8d](https://github.com/woj-tek/mailu-helm-charts/commit/f72db8d78dd0de4d77ad8085dfafe5de0f38cab8))
+* bump mailu version to 2.0.22 ([#296](https://github.com/woj-tek/mailu-helm-charts/issues/296)) ([17d3b94](https://github.com/woj-tek/mailu-helm-charts/commit/17d3b94558f795e0f7f43804f51e23285f8c8075))
+* bump mailu version to 2.0.30 ([#314](https://github.com/woj-tek/mailu-helm-charts/issues/314)) ([4884ca4](https://github.com/woj-tek/mailu-helm-charts/commit/4884ca4d0e030038f262d569b15bca550b404539))
+* dynamic shields ([0651568](https://github.com/woj-tek/mailu-helm-charts/commit/065156800f661c522a7d89a2c77b107a5f859356))
+* upgrade mailu version to 2.0.20 ([#294](https://github.com/woj-tek/mailu-helm-charts/issues/294)) ([d7fc85c](https://github.com/woj-tek/mailu-helm-charts/commit/d7fc85cbc4b68a496a7f9ddc2fdc50d85fac4206))
+
+
+### Bug Fixes
+
+* [BUG] Helm error when deploying with webdav.enabled=true because of missing template [#232](https://github.com/woj-tek/mailu-helm-charts/issues/232) ([91cd49e](https://github.com/woj-tek/mailu-helm-charts/commit/91cd49e57166f1d64f2e667b96efe5ba1f01d7c1))
+* [BUG] postfix-overrides ConfigMap will never render [#234](https://github.com/woj-tek/mailu-helm-charts/issues/234) ([bc73acc](https://github.com/woj-tek/mailu-helm-charts/commit/bc73acca4f24d162716c73fad6833ffb7dbf9f02))
+* bumped Mailu version to 2.0.10 ([f70466c](https://github.com/woj-tek/mailu-helm-charts/commit/f70466cde9d11891593d0ecb25b5b1d3bf69a11d))
+* fix postgresql initdb script ([#258](https://github.com/woj-tek/mailu-helm-charts/issues/258)) ([04b803a](https://github.com/woj-tek/mailu-helm-charts/commit/04b803a83e89f17a7fc247ebec0b4cd06fbbc73a))
+* fix redis service name when using Mailu as a subchart ([ae7f804](https://github.com/woj-tek/mailu-helm-charts/commit/ae7f804ffbf3a945471353a65ee75c55f822e829))
+* fixed dovecot probes ([b1b0405](https://github.com/woj-tek/mailu-helm-charts/commit/b1b0405681350a85464cf3d69c3bc28355f7d8c5))
+* fixed encoding of relayuser and relaypassword ([0209240](https://github.com/woj-tek/mailu-helm-charts/commit/02092404f1d060699fff81554b54872bcfbb6479))
+* fixed probes ([#289](https://github.com/woj-tek/mailu-helm-charts/issues/289)) ([76c333c](https://github.com/woj-tek/mailu-helm-charts/commit/76c333c7682536141262255754b74f1065609f17))
+* fixed readme and generator ([98c21c7](https://github.com/woj-tek/mailu-helm-charts/commit/98c21c79a68d0aef21c2022d2eb562e232456086))
+* Fixed sieve support ([91792ff](https://github.com/woj-tek/mailu-helm-charts/commit/91792ffbc0811d1c0252603c53c17d1e25d646a6))
+* fixed typo in fetchmail deployment ([baca17a](https://github.com/woj-tek/mailu-helm-charts/commit/baca17a2c12019a8504f3a72b17809690c2d79fc))
+* fixed typo when external service set to NodePort ([741a90d](https://github.com/woj-tek/mailu-helm-charts/commit/741a90daf10d45f181e253f06c863919b00e9dc3))
+* only include roudcube secrets if webmail.enabled is set to true ([#272](https://github.com/woj-tek/mailu-helm-charts/issues/272)) ([5e652c0](https://github.com/woj-tek/mailu-helm-charts/commit/5e652c0b2b5db10032320e7b9e805c711cc6853f))
+* readinessProbe.enabled has no effect ([b33d602](https://github.com/woj-tek/mailu-helm-charts/commit/b33d60238aaf83fe322c1d100e3b9d4b2cae6ecd))
+* Restrict web ports to ingress-nginx when network policies are enabled ([e21cc8b](https://github.com/woj-tek/mailu-helm-charts/commit/e21cc8bcdecfcba509bfaea01609858393a2730e))
+* set default permanentSessionLifetime to 30 days instead of 30 hours ([180109f](https://github.com/woj-tek/mailu-helm-charts/commit/180109f96ff3f9bea39890998a65ab501690cba8))
+
 ## [1.5.0](https://github.com/Mailu/helm-charts/compare/mailu-1.4.0...mailu-1.5.0) (2023-10-24)
 
 
